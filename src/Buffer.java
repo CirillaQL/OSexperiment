@@ -1,19 +1,16 @@
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
+import javax.swing.*;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
-public class ReadAndWrite extends JFrame
+public class Buffer extends JFrame
 {
     public static int countReader;  //手动设置读者数
     public static int countWriter;  //手动设置写者数
@@ -30,8 +27,9 @@ public class ReadAndWrite extends JFrame
     static JTextField textfield1, textfield2, textfield3,textfield4;
     JPanel panel, panel1, panel2;
     JLabel label1, label2, label3;
+    
     static JTextPane textpane;
-    public ReadAndWrite(){
+    public Buffer(){
         Scanner sc = new Scanner(System.in);//用来输入读写者个数
         System.out.println("读者个数:");
         countReader = sc.nextInt();
@@ -52,6 +50,9 @@ public class ReadAndWrite extends JFrame
         panel1.add(textfield2);
         panel1.add(label3);
         panel1.add(textfield3);
+
+
+
 
         JLabel label4 = new JLabel("正在等待读写者:");
         textfield4 = new JTextField(44);//显示读写者的先后顺序
@@ -93,22 +94,24 @@ public class ReadAndWrite extends JFrame
     public static void main(String[] args)
     {
         // TODO Auto-generated method stub
-        ReadAndWrite raw = new ReadAndWrite();
+        Buffer raw = new Buffer();
+
         int i = 1;
         int j = 1;
-        while(i<=ReadAndWrite.countReader||j<=ReadAndWrite.countWriter){
+
+        while(i<= Buffer.countReader||j<= Buffer.countWriter){
             if(new Random().nextBoolean()){         //随机判断读写者
-                if(i>ReadAndWrite.countReader)
+                if(i> Buffer.countReader)
                     continue;
-                ReadAndWrite.insert("读者R"+i+"来了");
+                Buffer.insert("读者R"+i+"来了");
                 raw.textfield4.setText(raw.textfield4.getText()+"R"+i+",");
                 new ReadThread(i);
                 i++;
             }
             else{
-                if(j>ReadAndWrite.countWriter)
+                if(j> Buffer.countWriter)
                     continue;
-                ReadAndWrite.insert("读者W"+j+"来了");
+                Buffer.insert("读者W"+j+"来了");
                 raw.textfield4.setText(raw.textfield4.getText()+"W"+j+",");
                 new WriteThread(j);
                 j++;
