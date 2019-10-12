@@ -1,9 +1,11 @@
 import com.sun.tools.javac.Main;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.CountDownLatch;
+import java.util.zip.CheckedOutputStream;
 
 public class getinfo extends Thread {
     private int CountReader, CountWriter;
@@ -51,10 +53,13 @@ public class getinfo extends Thread {
                     JOptionPane.showMessageDialog(MainWindow,"输入错误");
                 }
                 countDownLatch.countDown();
+                System.out.println(CountReader);
+                System.out.println(CountWriter);
             }
         });
 
-        MainWindow.setBounds(800,300,250,100);
+        MainWindow.setLayout(new FlowLayout());
+        MainWindow.setBounds(800,300,250,140);
         MainWindow.setVisible(true);
         MainWindow.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     }

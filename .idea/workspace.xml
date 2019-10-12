@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32fe4ef-8fe9-4ad3-a3a5-f0764989f109" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/getinfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/ReadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/ReadThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/WriteThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/WriteThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/getinfo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +46,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReadAndWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ReadAndWrite" />
       <module name="untitled" />
@@ -52,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ReadAndWrite" />
       </list>
     </recent_temporary>

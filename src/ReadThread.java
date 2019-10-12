@@ -3,9 +3,10 @@ import java.util.Random;
 
 public class ReadThread extends Thread
 {
-    public int id;
+    private int id;
 
-    public ReadThread(int id)
+    //创建后直接运行
+    ReadThread(int id)
     {
         this.id = id;
         this.start();
@@ -18,7 +19,7 @@ public class ReadThread extends Thread
                 if(Buffer.writeSemaphore.availablePermits()>0)    //判断是否有写者正在操作
                     Buffer.insert("读者R"+id+"可以读");
                 else
-                    Buffer.insert("有写者在写操作,所以读者R"+id+"正在等待读");
+                    Buffer.insert("读者R"+id+"正在等待读");
                 //判断部分，如果writeSemaphore>0则可以进行读操作，availablePermits()返回此Semaphore对象中当前可用的许可数
 
                 Buffer.reader_wait.acquire();//阻塞第一个之后的读者
