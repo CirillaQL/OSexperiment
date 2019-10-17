@@ -28,7 +28,7 @@ public class ReadThread extends Thread
                 Buffer.first_reader_wait.release();
                 Buffer.readSemaphore.release();
                 Buffer.insert("读者R"+id+"读文件");      //界面显示
-                Buffer.textfield1.setText(" " + "读者R");
+                Buffer.textfield1.setText(" " + "读者正在读");
                 Thread.sleep((long) (new Random().nextFloat()*5000));
                 Buffer.insert("读者R"+id+"读完了");
                 Buffer.ReadCountSemaphore.acquire();
@@ -40,7 +40,6 @@ public class ReadThread extends Thread
         }
         catch (InterruptedException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

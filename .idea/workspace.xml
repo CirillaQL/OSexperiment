@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32fe4ef-8fe9-4ad3-a3a5-f0764989f109" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/Buffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/Buffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ReadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/ReadThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/WriteThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/WriteThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/getinfo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/getinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/getinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/Buffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/META-INF/untitled.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/ReadAndWrite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/ReadThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/WriteThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/getinfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WriteThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/getinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/getinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OSexperiment.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,9 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
@@ -53,14 +57,14 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="untitled" />
+      <module name="OSexperiment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ReadAndWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ReadAndWrite" />
-      <module name="untitled" />
+      <module name="OSexperiment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -25,7 +25,7 @@ public class WriteThread extends Thread
                 Buffer.WriteCountSemaphore.release();
                 Buffer.writeSemaphore.acquire();//写者开始操作，与其他操作互斥
                 Buffer.insert("写者W"+this.id+"正在写");               //界面显示
-                Buffer.textfield1.setText(" "+ "写者W"+id);
+                Buffer.textfield1.setText(" "+ "写者W"+ id + "正在写");
                 Thread.sleep((long) (new Random().nextFloat()*5000));
                 Buffer.insert("写者W"+this.id+"写完了");
                 Buffer.writeSemaphore.release();
@@ -38,7 +38,6 @@ public class WriteThread extends Thread
         }
         catch (InterruptedException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

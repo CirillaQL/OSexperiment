@@ -41,7 +41,7 @@ public class getinfo extends Thread {
                 CountWriter = Integer.parseInt(JT2.getText());
                 if (CountWriter <= 0 || CountReader <= 0) {
                     JOptionPane.showMessageDialog(MainWindow, "输入错误", "错误", JOptionPane.WARNING_MESSAGE);
-                    break;
+                    break;\\
                 } else {
                     countDownLatch.countDown();
                 }
